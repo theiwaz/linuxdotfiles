@@ -1,3 +1,4 @@
+ZSH_THEME="robbyrussell"
 autoload colors zsh/terminfo
 colors
 precmd() { print "" }
