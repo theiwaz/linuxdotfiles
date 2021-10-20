@@ -28,6 +28,11 @@ set scrolloff=1
 set sidescrolloff=5
 let mapleader="\<SPACE>"
 syntax on
+
+" Cursor bar and block mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[1 q"
+
 " disable mouse support
 set mouse=r
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=10
