@@ -1,9 +1,15 @@
-ZSH_THEME="robbyrussell"
+export ZSH=~/.oh-my-zsh
+ZSH_THEME="eastwood"
+
 autoload colors zsh/terminfo
 colors
-precmd() { print "" }
-PS1=""
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+
+PS1=" "
 RPS1="%{$fg[magenta]%}%20<...<%~%<<%{$reset_color%}"
+
 setopt auto_cd
 if [[ ! -f ~/.antigen.zsh ]]; then
 	curl -L git.io/antigen > antigen.zsh
@@ -11,3 +17,4 @@ fi
 source ~/.antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle git
+antigen apply
