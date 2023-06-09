@@ -6,7 +6,7 @@ curl -L git.io/antigen > antigen.zsh
 chsh -s /usr/bin/zsh 
 
 # Install oh-my-zsh
-h -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf ~/.config/nvim 2> /dev/null
 mkdir -p ~/.config ~/.config/nvim
