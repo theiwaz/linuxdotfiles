@@ -53,6 +53,9 @@ nmap <Leader><Leader> <c-^>
 "Next/previous buffer
 nnoremap <Tab> :bnext!<CR>
 nnoremap <S-Tab> :bprev!<CR><Paste>
+"replace selected text with
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
 "VIM plugins
 
 call plug#begin('~/.vim/plugged')

@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # append to path
+path+=('/home/theiwaz/.dotnet/tools')
 path=("/opt/nvim-linux64/bin" $path)
 export PATH
 
