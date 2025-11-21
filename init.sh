@@ -25,3 +25,4 @@ ln -s ~/linuxdotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/linuxdotfiles/vimrc ~/.config/nvim/init.vim
 ln -s ~/linuxdotfiles/vimrc ~/.vimrc
 ln -s ~/linuxdotfiles/antigen.zsh ~/.antigen.zsh
+ln -s ~/linuxdotfiles/nvim ~/.config/nvim
