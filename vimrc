@@ -26,7 +26,7 @@ set hlsearch
  " Space above/beside cursor from screen edges
 set scrolloff=1
 set sidescrolloff=5
-let mapleader="\<SPACE>"
+let mapleader=" "
 syntax on
 
 " Cursor bar and block mode

@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install zsh neovim #ag
+sudo apt-get install zsh neovim ripgrep zoxide
 sudo apt install fonts-firacode
 curl -L git.io/antigen > antigen.zsh
 chsh -s /usr/bin/zsh 
@@ -26,3 +26,6 @@ ln -s ~/linuxdotfiles/vimrc ~/.config/nvim/init.vim
 ln -s ~/linuxdotfiles/vimrc ~/.vimrc
 ln -s ~/linuxdotfiles/antigen.zsh ~/.antigen.zsh
 ln -s ~/linuxdotfiles/nvim ~/.config/nvim
+ln -s ~/linuxdotfiles/yazi ~/.config/yazi:wq
+
+

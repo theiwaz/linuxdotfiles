@@ -101,7 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # append to path
-path+=('/home/theiwaz/.dotnet/tools')
-path=("/opt/nvim-linux64/bin" $path)
+path+=('~/.dotnet/tools')
+path=("~/.local/bin" $path) # add nvim to front so it gets found first
+path=("/opt/nvim/" $path) # add nvim to front so it gets found first
 export PATH
-
+eval "$(zoxide init zsh)"
