@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install zsh neovim ripgrep zoxide
+sudo apt-get install zsh neovim ripgrep zoxide tmux
 sudo apt install fonts-firacode
 curl -L git.io/antigen > antigen.zsh
 chsh -s /usr/bin/zsh 
@@ -9,7 +9,7 @@ chsh -s /usr/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 rm -rf ~/.vim ~/.vimrc ~/.zshrc ~/.tmux ~/.tmux.conf ~/.config/nvim 2> /dev/null
-mkdir -p ~/.config ~/.config/nvim
+mkdir -p ~/.config 
 
 # Pluginmanager for vi.m
 curl  ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
@@ -20,6 +20,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 	       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# TMUX plugin manager 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Create sim links for dotfile referencing them in my linuxdotfile directory
 ln -s ~/linuxdotfiles/zshrc ~/.zshrc
 ln -s ~/linuxdotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/linuxdotfiles/vimrc ~/.config/nvim/init.vim
