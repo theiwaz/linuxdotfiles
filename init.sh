@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install zsh neovim ripgrep zoxide tmux
+sudo apt-get install zsh neovim ripgrep zoxide tmux fonts-powerline
 sudo apt install fonts-firacode
 curl -L git.io/antigen > antigen.zsh
 chsh -s /usr/bin/zsh 

@@ -27,7 +27,8 @@ require('lazy').setup({
   require 'plugins.lualine',    -- better status bar with info
   require 'plugins.gitsigns',   -- git indicators in gutter
   require 'plugins.treesitter', -- code highligthing
-  require 'plugins.telescope'   -- fuzzy file finder
+  require 'plugins.telescope',   -- fuzzy file finder
+  require 'plugins.lsp'   -- Language servers 
 })
 
 
