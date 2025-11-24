@@ -22,4 +22,18 @@ To install/manage tmux plugins
 <C-b> + U : Update plugins
 <C-b> + I : Install plugins
 
+## Mason LSP
+
+To debug 
+
+`:LspInstall`
+`:checkhealth mason`
+
+### for JSON 
+
+`sudo apt install nodejs`
+
+### Python
+
+- sudo apt install py python3-pip  python3.12-venv
 
