@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -103,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # append to path
 path+=('~/.dotnet/tools')
 path=("~/.local/bin" $path) # add nvim to front so it gets found first
-path=("/opt/nvim/" $path) # add nvim to front so it gets found first
+path=("/opt/nvim-linux-x86_64/bin" $path) # add nvim to front so it gets found first
+path=($path "$HOME/.cargo/env") # Add rust to path 
+
 export PATH
 eval "$(zoxide init zsh)"

@@ -1,9 +1,29 @@
+# Update apt
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install zsh neovim ripgrep zoxide tmux fonts-powerline
+
+# Install utils
+sudo apt-get install zsh \
+  neovim \
+  ripgrep \
+  zoxide \
+  tmux \
+  fonts-powerline  \
+  lua5.4 luarocks \
+  python3-venv \ # for the python-lsp-server 
+  build-essential \ 
+  curl \
+  unzip \
+  git \
+  ripgrep
+
 sudo apt install fonts-firacode
 curl -L git.io/antigen > antigen.zsh
 chsh -s /usr/bin/zsh 
+
+# Download NeoVim, zshrc cotains adding to path declaration 
+sudo curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -31,6 +51,13 @@ ln -s ~/linuxdotfiles/vimrc ~/.config/nvim/init.vim
 ln -s ~/linuxdotfiles/vimrc ~/.vimrc
 ln -s ~/linuxdotfiles/antigen.zsh ~/.antigen.zsh
 ln -s ~/linuxdotfiles/nvim ~/.config/nvim
-ln -s ~/linuxdotfiles/yazi ~/.config/yazi:wq
+ln -s ~/linuxdotfiles/yazi ~/.config/yazi
+
+source ./install-yazi.sh
+source ./install-rust.sh
+source ./install-dotnet.sh
+
+
+
 
 
